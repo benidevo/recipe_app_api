@@ -6,7 +6,7 @@ COPY ./uwsgi_params /etc/nginx/uwsgi_params
 COPY ./run.sh /run.sh
 
 ENV LISTEN_PORT=8000
-ENV APP_HOST=core
+ENV APP_HOST=ec2-34-238-157-36.compute-1.amazonaws.com
 ENV APP_PORT=9000
 
 USER root
