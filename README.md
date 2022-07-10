@@ -15,3 +15,8 @@ docker-compose run --rm app sh -c "python manage.py makemigrations"
 `
 docker-compose run --rm app sh -c "python manage.py migrate"
 `
+## Collect Static Files
+
+`
+docker-compose run --rm app sh -c "python manage.py collectstatic --noinput"
+`
